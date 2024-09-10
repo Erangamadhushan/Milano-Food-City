@@ -3,8 +3,23 @@
   padding: 0;
   margin: 0;
 }
+:root{
+    --main:#00062e;
+    --line:#df6711;
+}
+.text-main {color:var(--main);}
+.text-line {color:var(--line);}
+.text-lg {font-size:3.5em;}
+.bg-main {background-color:var(--main);}
+.bg-line {background-color:var(--line);}
 .ratio  {
   background-size:cover;
+}
+img {
+  max-width:100%;
+}
+.menu_icons {
+  margin:auto;
 }
 /*  .navbar{
  min-height: 80px;
