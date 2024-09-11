@@ -21,6 +21,7 @@ boxes.forEach(box=> {
 })
   window.addEventListener("DOMContentLoaded", function () {
     renderItem(menu)
+    creatMenuBtn()
   });
 
 console.log(menu)
@@ -50,4 +51,31 @@ function renderItem(menuItems){
     
     menu__container.innerHTML = menuCard;
 }
+
+let categoryType = []
+
+menu.forEach(item=>{
+  if(!categoryType.includes(item.category)){
+    categoryType.push(item.category);
+  }
+})
+
+console.log(categoryType);
+
+let categoryBtnList = ''
+let menuBtnContainer = document.querySelector('.menu-btn-container')
+
+function creatMenuBtn(){
+  categoryType.forEach(category=>{
+      categoryBtnList += `
+                          <div class="col-md-2 ">
+                            <a href="#"><img src="icons/item_menu1.png" alt="items"/></a>
+                            <p class="text-line text-center btn btn-info cat-btn" data-category-type='${category}'>${category}</p>
+                          </div>
+                        `
+  })
+  menuBtnContainer.innerHTML = categoryBtnList
+}
+
+
 
