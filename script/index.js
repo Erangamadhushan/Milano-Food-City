@@ -19,10 +19,17 @@ let boxes = document.querySelectorAll('.box');
 boxes.forEach(box=> {
   observer.observe(box);
 })
+<<<<<<< HEAD
+window.addEventListener("DOMContentLoaded", function () {
+  renderItem(menu)
+  creatMenuBtn()
+});
+=======
   window.addEventListener("DOMContentLoaded", function () {
     //renderItem(menu)
     creatMenuBtn()
   });
+>>>>>>> 64c2c3616e9340252203826a82773729bc005022
 
 let menu__container = document.querySelector('.menu-container');
 
@@ -30,7 +37,11 @@ function renderItem(menuItems){
       let menuCard = '';
       menuItems.forEach((item,index) => {
         menuCard += `
+<<<<<<< HEAD
+            <div class="col-md-3 col-sm-12 col-lg-3 border border-line menu-item p-1 m-1">
+=======
             <div class="col-md-3 col-sm-12 col-lg-3 border border-info menu-item p-1 m-1 animate__animated animate__fadeIn  animate__fast">
+>>>>>>> 64c2c3616e9340252203826a82773729bc005022
                 <div class="align-item-center justify-content-center d-flex p-1">
                     <img src='${item.img}' height="150px" class="border border-3 border-info">
                 </div>
