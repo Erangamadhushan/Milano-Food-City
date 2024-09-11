@@ -20,20 +20,17 @@ boxes.forEach(box=> {
   observer.observe(box);
 })
   window.addEventListener("DOMContentLoaded", function () {
-    renderItem(menu)
+    //renderItem(menu)
     creatMenuBtn()
   });
 
-console.log(menu)
-
 let menu__container = document.querySelector('.menu-container');
-let menuCard = '';
-
 
 function renderItem(menuItems){
-      menuItems.forEach(item => {
+      let menuCard = '';
+      menuItems.forEach((item,index) => {
         menuCard += `
-            <div class="col-md-3 col-sm-12 col-lg-3 border border-info menu-item p-1 m-1">
+            <div class="col-md-3 col-sm-12 col-lg-3 border border-info menu-item p-1 m-1 animate__animated animate__fadeIn  animate__fast">
                 <div class="align-item-center justify-content-center d-flex p-1">
                     <img src='${item.img}' height="150px" class="border border-3 border-info">
                 </div>
@@ -60,8 +57,6 @@ menu.forEach(item=>{
   }
 })
 
-console.log(categoryType);
-
 let categoryBtnList = ''
 let menuBtnContainer = document.querySelector('.menu-btn-container')
 
@@ -75,7 +70,25 @@ function creatMenuBtn(){
                         `
   })
   menuBtnContainer.innerHTML = categoryBtnList
+
+  const catBtns = document.querySelectorAll('.cat-btn')
+
+    catBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+          menu__container.innerHTML = " ";
+          let btnCategory = btn.getAttribute('data-category-type');
+          const filteredMenu = menu.filter(item => item.category === btnCategory);
+          renderItem(filteredMenu);  
+      });
+  });
+
 }
 
+window.onload = function () {
+  const defaultCategory = categoryType[0]; 
+  const defaultMenu = menu.filter(item => item.category === defaultCategory);
+  renderItem(defaultMenu);
+}
+  
 
 
