@@ -41,20 +41,9 @@ function renderItem(menuItems){
                       <button type="button" class="btn bg-line">Add to Card</button>
                     </div>
                   </div>
-            <div class="col-md-3 col-sm-12 col-lg-3 border border-line menu-item p-1 m-1">
-                <div class="align-item-center justify-content-center d-flex p-1">
-                    <img src='${item.img}' height="150px" class="border border-3 border-info">
-                </div>
-                <div>
-                    <h3>${item.title}</h3>
-                    <hr>
-                </div>
-                <div class="mt-0">
-                    <p>${item.desc}</p>
-                    <p class="btn btn-outline-info">Add to cart</p>
-
                 </div>
             </div>
+            
         `;
     });
     
