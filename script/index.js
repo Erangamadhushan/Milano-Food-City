@@ -62,24 +62,24 @@ let menuBtnContainer = document.querySelector('.menu-btn-container')
 function creatMenuBtn(){
   categoryType.forEach(category=>{
       categoryBtnList += `
-                          <div class="col-md-2 ">
-                            <a href="#"><img src="icons/item_menu1.png" alt="items"/></a>
+                          <div class="col-md-2 d-flex flex-column">
+                            <a href="#" class="my-2"><img src="icons/item_menu1.png" alt="items" style="width:80px;aspect-ratio:1;margin-inline:30%;"/></a>
                             <p class="text-line text-center btn btn-info cat-btn" data-category-type='${category}'>${category}</p>
                           </div>
-                        `
+                        `;
   })
   menuBtnContainer.innerHTML = categoryBtnList
 
   const catBtns = document.querySelectorAll('.cat-btn')
 
-    catBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-          menu__container.innerHTML = " ";
-          let btnCategory = btn.getAttribute('data-category-type');
-          const filteredMenu = menu.filter(item => item.category === btnCategory);
-          renderItem(filteredMenu);  
-      });
-  });
+catBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        menu__container.innerHTML = " ";
+        let btnCategory = btn.getAttribute('data-category-type');
+        const filteredMenu = menu.filter(item => item.category === btnCategory);
+        renderItem(filteredMenu);  
+    });
+});
 
 }
 
