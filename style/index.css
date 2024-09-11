@@ -12,6 +12,8 @@
 .text-lg {font-size:3.5em;}
 .bg-main {background-color:var(--main);}
 .bg-line {background-color:var(--line);}
+.border-main {border:1px solid var(--main);}
+.border-line {border:2px solid var(--line);}
 .ratio  {
   background-size:cover;
 }
