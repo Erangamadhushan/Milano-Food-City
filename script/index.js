@@ -30,17 +30,16 @@ function renderItem(menuItems){
       let menuCard = '';
       menuItems.forEach((item,index) => {
         menuCard += `
-            <div class="col-md-3 col-sm-12 col-lg-3 border border-line menu-item p-1 m-1">
-                <div class="align-item-center justify-content-center d-flex p-1">
-                    <img src='${item.img}' height="150px" class="border border-3 border-info">
-                </div>
-                <div>
-                    <h3>${item.title}</h3>
-                    <hr>
-                </div>
-                <div class="mt-0">
-                    <p>${item.desc}</p>
-                    <p class="btn btn-outline-info">Add to cart</p>
+            <div class=" col-lg-3 col-md-3 col-sm-12  border border-line menu-item p-1 m-1 animate__animated animate__fade">
+                <div class="card">
+                  <img src="${item.img}" alt="images" class="card-img-top" height="250px"/>
+                  <div class="card-body">
+                    <h3 class="text-center">${item.title}</h3>
+                    <p class="text-center">${item.desc}</p>
+                    <div class="d-flex justify-content-center">
+                      <button type="button" class="btn bg-line">Add to Card</button>
+                    </div>
+                  </div>
                 </div>
             </div>
         `;
