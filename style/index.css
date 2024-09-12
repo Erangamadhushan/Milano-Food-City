@@ -23,6 +23,9 @@ img {
 .menu_icons {
   margin:auto;
 }
+.bg-main:hover {
+  border:1px solid var(--main);
+}
 /*  .navbar{
  min-height: 80px;
   z-index: 1000;
@@ -80,6 +83,11 @@ img {
 @media only screen and (max-width: 600px) {
   .menu-item{
     width:98%;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .carousel-caption {
+    display:none;
   }
 }
 
