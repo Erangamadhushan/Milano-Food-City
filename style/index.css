@@ -96,3 +96,25 @@ img {
     width:32%;
   }
 } */
+
+.card input{
+  width: 50px;
+  height: 38px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card .item-price{
+  font-size: 20px;
+}
+
+.card .input-btn{
+  border: none;
+  height:35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: aliceblue;
+}
