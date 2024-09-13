@@ -80,23 +80,6 @@ img {
 .menu-item {
   width: 20rem;
 }
-@media only screen and (max-width: 600px) {
-  .menu-item{
-    width:98%;
-  }
-}
-@media only screen and (max-width:1200px) {
-  .carousel-caption {
-    display:none;
-  }
-}
-
-/* @media only screen and (max-width: 1024px) {
-  .menu-item{
-    width:32%;
-  }
-} */
-
 .card input{
   width: 50px;
   height: 38px;
@@ -118,3 +101,25 @@ img {
   font-size: 20px;
   background-color: aliceblue;
 }
+button[class='bg-line']:hover,button[class='bg-line']:active {
+  background:transparent;
+  border:1px solid var(--line);
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-item{
+    width:98%;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .carousel-caption {
+    display:none;
+  }
+}
+
+/* @media only screen and (max-width: 1024px) {
+  .menu-item{
+    width:32%;
+  }
+} */
+

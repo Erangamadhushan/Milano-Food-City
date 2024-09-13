@@ -47,7 +47,7 @@ function renderItem(menuItems){
 
                       <div class="d-flex justify-content-between align-items-center qty-input">
                         <button class="input-btn input-btn-pluse mx-2"> &#43;</button>
-                        <input type="number" value="1" min="1" max="10" class="input-qty"> </input>
+                        <input type="number" value="1" min="1" max="10" class="input-qty" readonly> </input>
                         <button class="input-btn input-btn-negative mx-2"> &#8722; </button>
                       </div>
 
