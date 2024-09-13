@@ -7,6 +7,9 @@
     --main:#00062e;
     --line:#df6711;
 }
+body {
+  scroll-behavior: smooth;
+}
 .text-main {color:var(--main);}
 .text-line {color:var(--line);}
 .text-lg {font-size:3.5em;}
@@ -89,6 +92,9 @@ img {
 
 .card .item-price{
   font-size: 20px;
+}
+.nav-link:hover {
+  border-bottom:1px solid var(--line);
 }
 
 .card .input-btn{
