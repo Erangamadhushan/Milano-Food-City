@@ -7,6 +7,9 @@
     --main:#00062e;
     --line:#df6711;
 }
+body {
+  scroll-behavior: smooth;
+}
 .text-main {color:var(--main);}
 .text-line {color:var(--line);}
 .text-lg {font-size:3.5em;}
@@ -80,6 +83,35 @@ img {
 .menu-item {
   width: 20rem;
 }
+.card input{
+  width: 50px;
+  height: 38px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card .item-price{
+  font-size: 20px;
+}
+.nav-link:hover {
+  border-bottom:1px solid var(--line);
+}
+
+.card .input-btn{
+  border: none;
+  height:35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: aliceblue;
+}
+button[class='bg-line']:hover,button[class='bg-line']:active {
+  background:transparent;
+  border:1px solid var(--line);
+}
+
 @media only screen and (max-width: 600px) {
   .menu-item{
     width:98%;
@@ -97,24 +129,3 @@ img {
   }
 } */
 
-.card input{
-  width: 50px;
-  height: 38px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.card .item-price{
-  font-size: 20px;
-}
-
-.card .input-btn{
-  border: none;
-  height:35px;
-  width: 35px;
-  border-radius: 50%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: aliceblue;
-}
