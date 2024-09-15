@@ -107,7 +107,7 @@ img {
   font-size: 20px;
   background-color: aliceblue;
 }
-button[class='bg-line']:hover,button[class='bg-line']:active {
+button:hover,button:active {
   background:transparent;
   border:1px solid var(--line);
 }
