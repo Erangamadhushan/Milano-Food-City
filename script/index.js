@@ -16,9 +16,10 @@ const observer = new IntersectionObserver((entries,observer)=>{
 })
 
 let boxes = document.querySelectorAll('.box');
-boxes.forEach(box=> {
+boxes.forEach((box) => {
   observer.observe(box);
 })
+
 
 //js for menu 
 
@@ -40,7 +41,7 @@ function renderItem(menuItems){
                   <div class="card-body">
                     <h3 class="text-center">${item.title}</h3>
                     <p class="text-center">${item.desc}</p>
-                    <p class="fw-bold item-price">$${item.price}</p>
+                    <p class="fw-bolder item-price">$${item.price}</p>
                     <div class="d-flex justify-content-between align-items-center">
 
                       <button type="button" class="btn bg-line">Add to Cart</button>
