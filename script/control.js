@@ -1,7 +1,7 @@
 const observer = new IntersectionObserver((entries,observe)=>{
     entries.forEach(entry=>{
         if(entry.isIntersecting) {
-            entry.target.classList.add('animate__zoomIn','animate_faster');
+            entry.target.classList.add('animate__fadeIn','animate_faster');
         }
         
     })
